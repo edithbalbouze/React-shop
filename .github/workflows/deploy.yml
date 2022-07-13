@@ -14,4 +14,4 @@ jobs:
         run: |
           npm ci
           npm run build
-          cp dist docs
+          cp -r dist docs
