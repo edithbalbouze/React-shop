@@ -42,9 +42,7 @@ const Header = () => {
                         <li className="more-clickable-area navbar-email poiner" onClick={() => toggleMenu()}>
                             edithbalbouze@example.com
                         </li>
-                        <li 
-                            className="navbar-shooping-cart"
-                            onClick={() => toggleOrder}>
+                        <li className="navbar-shooping-cart" onClick={() => toggleOrder}>
                             <img className='more-clickable-area pointer' src={shoopingCart} alt="shooping cart" />
                             {state.cart.length > 0 ? <div>{state.cart.length}</div> : null }
                         </li>
