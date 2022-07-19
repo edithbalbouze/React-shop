@@ -5,6 +5,10 @@ nav {
     justify-content: space-between;
     padding: 0 24px;
     border-bottom: 1px solid var(--very-light-pink);
+    position: fixed;
+    top: 0;
+    background: white;
+    width: calc(100% - 50px);
 }
 .menu {
     display: none;
@@ -12,7 +16,8 @@ nav {
 .nav-logo {
     width: 100px;
 }
-.navbar-left ul, .navbar-right ul {
+.navbar-left ul, 
+.navbar-right ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -24,16 +29,18 @@ nav {
     display: flex;
 }
 .navbar-left ul {
-    margin-left: 28px;
+    margin-left: 12px;
 }
-.navbar-left ul li a, .navbar-right ul li a {
+.navbar-left ul li a, 
+.navbar-right ul li a {
     text-decoration: none;
     color: var(--very-light-pink);
     border: 1px solid var(white);
     padding: 8px;
     border-radius: 8px;
 }
-.navbar-left ul li a:hover, .navbar-right ul li a:hover {
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover {
     border: 1px solid var(--hospital-green);
     color: var(--hospital-green);
 }
