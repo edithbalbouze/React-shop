@@ -5,6 +5,7 @@ import close from '@icons/icon_close.png';
 
 const OrderItem = ({ product }) => {
     const { removeFromCart } = useContext(AppContext);
+    
     const handleRemove = product => {
         removeFromCart(product);
     }
@@ -15,7 +16,7 @@ const OrderItem = ({ product }) => {
             </figure>
             <p>{product.title}</p>
             <p>$ {product.price}</p>
-            <img src={close} alt="close" className="close"onClick={() => handleRemove(product)} />
+            <img className='pointer more-clickable-area' src={close} alt="close" className="close"onClick={() => handleRemove(product)} />
         </div>
     );
 }
