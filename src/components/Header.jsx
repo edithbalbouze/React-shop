@@ -8,7 +8,7 @@ import shoopingCart from '@icons/icon_shopping_cart.svg';
 import '@style/Header.scss';
 
 const Header = () => {
-    const [state, toggleOrder, toggleMenu] = useContext(AppContext);
+    const {state, toggleOrder, toggleMenu} = useContext(AppContext);
 
     return (
         <>
